@@ -4,7 +4,17 @@ body {
   padding: 0;
 }
 
-.container {
+.container1 {
+  background-image: linear-gradient(to bottom, #0d1b2a, #071730);
+  display: flex;
+  justify-content: space-around;
+  min-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 15px;
+}
+
+.container2 {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
@@ -13,7 +23,7 @@ body {
 header {
   background-color: #1a202c;
   color: #fff;
-  padding-bottom: 40px;
+  /* padding-bottom: 40px; */
 }
 
 nav {
@@ -23,14 +33,23 @@ nav {
 }
 
 .logo {
-  font-size: 24px;
+  margin-left: 0;
+  display: flex;
+  font-size: 3rem;
   font-weight: bold;
   text-align: left;
 }
 
+.menu{
+  padding-left: 550px;
+  display: flex;
+  justify-content: flex-end;
+}
 .menu li {
+  font-weight: 600;
+  font-size: 20px;
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 50px;
 }
 
 .menu li a {
@@ -39,6 +58,7 @@ nav {
 }
 
 .hero {
+  background-color: #062545;
   text-align: center;
   padding: 100px 0;
 }
