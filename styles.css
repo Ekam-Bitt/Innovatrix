@@ -45,6 +45,21 @@ nav {
   display: flex;
   justify-content: flex-end;
 }
+.menu li a:hover,
+.menu li a.active{
+  color: #088178;
+}
+
+.menu li a.active::after,
+.menu li a:hover::after{
+  content: ""; 
+  width: 30%;
+  height: 2px;
+  background: #088178;
+  position:absolute;
+  bottom: -4px;
+  left: 20px;
+}
 .menu li {
   font-weight: 600;
   font-size: 20px;
