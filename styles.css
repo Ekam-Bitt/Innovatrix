@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&family=Varela+Round&display=swap');
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -5,19 +6,21 @@ body {
 }
 
 .container1 {
+  position: sticky;
+  top: 0;
   background-image: linear-gradient(to bottom, #0d1b2a, #071730);
   display: flex;
   justify-content: space-around;
   min-width: 1500px;
   margin: 0 auto;
   padding: 20px;
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 20px;
 }
-
 .container2 {
+  font-family: 'Poppins', sans-serif;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
 }
 
 header {
@@ -91,11 +94,28 @@ nav {
 .cta-button {
   display: inline-block;
   padding: 15px 30px;
-  background-color: #38a169;
-  color: #fff;
+  background-color: #ffea00;
+  color: #0d0202;
   font-size: 16px;
   text-decoration: none;
   border-radius: 4px;
+}
+
+.cta-button:hover,
+.cta-button.active{
+  background-color: #eeba0b;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.cta-button.active::after,
+.cta-button:hover::after{
+  width: 30%;
+  height: 2px;
+  background: #088178;
+  position:absolute;
+  bottom: -4px;
+  left: 20px;
 }
 
 .features {
