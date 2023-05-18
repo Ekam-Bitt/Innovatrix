@@ -11,6 +11,9 @@ body {
   justify-content: space-between;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 20px;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
 .logo {
