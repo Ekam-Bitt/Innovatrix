@@ -2,7 +2,7 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-    background-color: #1a202c;
+    background-color: #fff;
   padding: 0;
 }
 
@@ -76,4 +76,24 @@ body {
   .navbar-menu li a {
     text-align: left;
   }
+}
+
+.about {
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+  min-height: 70.5vh;
+}
+.about h2{
+  font-size: 30px;
+  text-align: center;
+  text-decoration: underline;
+}
+.about p{
+  padding: 20px 40px;
+}
+footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
