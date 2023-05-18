@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&family=Varela+Round&display=swap');
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+    background-color: #1a202c;
+  padding: 0;
+}
+
+.navbar {
+  background: #071730;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 20px;
+}
+
+.logo {
+  margin-left: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.menu{
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu li {
+  font-weight: 600;
+  font-size: 20px;
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 30px;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu li a:hover,
+.menu li a.active{
+  color: #088178;
+}
+
+.menu li a.active::after,
+.menu li a:hover::after{
+  content: ""; 
+  width: 30%;
+  height: 2px;
+  background: #088178;
+  position:absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar-brand {
+    text-align: center;
+  }
+
+  .navbar-menu {
+    width: 100%;
+  }
+
+  .navbar-menu li {
+    display: block;
+  }
+
+  .navbar-menu li a {
+    text-align: left;
+  }
+}
