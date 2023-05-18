@@ -50,7 +50,6 @@ body {
 
 .menu li a.active::after,
 .menu li a:hover::after{
-  content: ""; 
   width: 30%;
   height: 2px;
   background: #088178;
@@ -139,7 +138,7 @@ header {
 }
 
 .features {
-  background-color: #f7fafc;
+  background-color: #f3f2f2;
   padding: 80px 0;
   text-align: center;
 }
@@ -161,7 +160,8 @@ header {
 }
 
 .feature h3 {
-  font-size: 24px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 34px;
   margin-bottom: 10px;
 }
 
@@ -180,12 +180,14 @@ header {
 }
 
 .about p {
-  font-size: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
   margin-bottom: 40px;
 }
 
 .contact {
-  background-color: #f7fafc;
+  background-color: #f0f9ffe9;
   padding: 80px 0;
   text-align: center;
 }
@@ -196,7 +198,7 @@ header {
 }
 
 .contact p {
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 40px;
 }
 
