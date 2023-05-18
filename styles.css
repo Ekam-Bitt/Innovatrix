@@ -11,9 +11,10 @@ body {
   justify-content: space-between;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 20px;
+  z-index: 999;
   position: sticky;
-  top: 0;
   left: 0;
+  top: 0;
 }
 
 .logo {
@@ -144,11 +145,15 @@ header {
 }
 
 .features h2 {
+  animation-name: moveInBottom;
+  animation-duration: 2s;
   font-size: 36px;
   margin-bottom: 40px;
 }
 
 .feature {
+  animation-name: moveInBottom;
+  animation-duration: 4s;
   display: inline-block;
   width: 33%;
   vertical-align: top;
@@ -233,4 +238,43 @@ footer {
 .social-media li a {
   color: #fff;
   font-size: 24px;
+}
+
+@keyframes moveInLeft{
+  0% {
+    opacity: 0;
+    transform: translate(-100px);
+  }
+  80%{
+    transform: translate(10px);
+
+  }
+  100%{
+    opacity: 100;
+    transform: translate(0);
+  }
+}
+@keyframes moveInRight{
+  0% {
+    opacity: 0;
+    transform: translate(100px);
+  }
+  80%{
+    transform: translate(-10px);
+
+  }
+  100%{
+    opacity: 100;
+    transform: translate(0);
+  }
+}
+@keyframes moveInBottom{
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100%{
+    opacity: 100;
+    transform: translateY(0);
+  }
 }
