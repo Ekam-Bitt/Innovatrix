@@ -1,24 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&family=Varela+Round&display=swap');
 body {
-  background-color: #062545;
-
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-.container1 {
-  z-index: 999;
-  position: -webkit-sticky;
-  top: 0;
-  left: 0;
-  background-image: linear-gradient(to bottom, #0d1b2a, #071730);
+.navbar {
+  background: #071730;
   display: flex;
-  justify-content: space-around;
-  min-width: 200vh;
-  max-height: 11vh;
+  justify-content: space-between;
+  align-items: center;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 20px;
 }
+
+.logo {
+  margin-left: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.menu{
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu li {
+  font-weight: 600;
+  font-size: 20px;
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 30px;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu li a:hover,
+.menu li a.active{
+  color: #088178;
+}
+
+.menu li a.active::after,
+.menu li a:hover::after{
+  content: ""; 
+  width: 30%;
+  height: 2px;
+  background: #088178;
+  position:absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar-brand {
+    text-align: center;
+  }
+
+  .navbar-menu {
+    width: 100%;
+  }
+
+  .navbar-menu li {
+    display: block;
+  }
+
+  .navbar-menu li a {
+    text-align: left;
+  }
+}
+
 
 .container2 {
   font-family: 'Poppins', sans-serif;
@@ -31,49 +89,6 @@ header {
   background-color: #1a202c;
   color: #fff;
   /* padding-bottom: 40px; */
-}
-
-nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.container1 .logo img{
-  display: flex;
-  justify-content: flex-start;
-  left: 0;
-}
-
-.menu{
-  padding-left: 550px;
-  display: flex;
-  justify-content: flex-end;
-}
-.menu li a:hover,
-.menu li a.active{
-  color: #088178;
-}
-
-.menu li a.active::after,
-.menu li a:hover::after{
-  width: 30%;
-  height: 2px;
-  background: #088178;
-  position:absolute;
-  bottom: -4px;
-  left: 20px;
-}
-.menu li {
-  font-weight: 600;
-  font-size: 20px;
-  display: inline-block;
-  margin-left: 50px;
-}
-
-.menu li a {
-  color: #fff;
-  text-decoration: none;
 }
 
 .hero {
@@ -99,12 +114,11 @@ nav {
   color: #0d0202;
   font-size: 16px;
   text-decoration: none;
-  border-radius: 45%;
+  border-radius: 4px;
 }
 
 .cta-button:hover,
 .cta-button.active{
-  border-radius:50%
   background-color: #eeba0b;
   color: #fff;
   transform: translateY(-2px);
@@ -202,7 +216,7 @@ nav {
 }
 
 footer {
-  background-color: #1a202c;
+  background-color: #000000;
   color: #fff;
   padding: 20px;
   text-align: center;
