@@ -150,14 +150,12 @@ header {
 
 .features h2 {
   animation-name: moveInBottom;
-  animation-duration: 3s;
+  animation-duration: 2s;
   font-size: 36px;
   margin-bottom: 40px;
 }
 
 .feature {
-  animation-name: moveInBottom;
-  animation-duration: 5s;
   display: inline-block;
   width: 33%;
   vertical-align: top;
@@ -166,11 +164,15 @@ header {
 
 .feature h3 {
   font-family: 'Poppins', sans-serif;
+  animation-name: moveInBottom;
+  animation-duration: 3s;
   font-size: 34px;
   margin-bottom: 10px;
 }
 
 .feature p {
+  animation-name: moveInBottom;
+  animation-duration: 4s;
   font-size: 16px;
 }
 
@@ -185,11 +187,15 @@ header {
 }
 
 .about h2 {
+  animation-name: moveInBottom;
+  animation-duration: 2s;
   font-size: 36px;
   margin-bottom: 40px;
 }
 
 .about p {
+  animation-name: moveInBottom;
+  animation-duration: 4s;
   padding-left: 20px;
   padding-right: 20px;
   font-size: 20px;
