@@ -87,6 +87,7 @@ header {
 }
 
 .hero {
+  /* position: relative; */
   background-color: #062545;
   text-align: center;
   padding: 100px 0;
@@ -138,21 +139,25 @@ header {
 }
 
 .features {
-  background-color: #f3f2f2;
-  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #fffeb7;
+  /* padding: 80px 0; */
   text-align: center;
 }
 
 .features h2 {
   animation-name: moveInBottom;
-  animation-duration: 2s;
+  animation-duration: 3s;
   font-size: 36px;
   margin-bottom: 40px;
 }
 
 .feature {
   animation-name: moveInBottom;
-  animation-duration: 4s;
+  animation-duration: 5s;
   display: inline-block;
   width: 33%;
   vertical-align: top;
@@ -170,8 +175,13 @@ header {
 }
 
 .about {
-  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* padding: 80px 0; */
   text-align: center;
+  background-color: #ffffff;
 }
 
 .about h2 {
@@ -187,8 +197,12 @@ header {
 }
 
 .contact {
-  background-color: #f0f9ffe9;
-  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  background-color: rgb(214, 245, 255);
+  /* padding: 80px 0; */
   text-align: center;
 }
 
@@ -226,9 +240,13 @@ header {
 }
 
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
   background-color: #000000;
   color: #fff;
-  padding: 20px;
+  /* padding: 20px; */
   text-align: center;
 }
 

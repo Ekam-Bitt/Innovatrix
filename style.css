@@ -2,7 +2,6 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-    background-color: #fff;
   padding: 0;
 }
 
@@ -12,6 +11,10 @@ body {
   justify-content: space-between;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 20px;
+  z-index: 999;
+  position: sticky;
+  left: 0;
+  top: 0;
 }
 
 .logo {
@@ -47,7 +50,6 @@ body {
 
 .menu li a.active::after,
 .menu li a:hover::after{
-  content: ""; 
   width: 30%;
   height: 2px;
   background: #088178;
@@ -78,23 +80,38 @@ body {
   }
 }
 
+
 .about {
-  font-family: 'Poppins', sans-serif;
-  color: #000;
-  min-height: 71vh;
-}
-.about h2{
-  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  text-decoration: underline;
+  background-color: #ffffff;
 }
-.about p{
-  padding: 20px 40px;
+
+.about h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
 }
+
+.about h3 {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.about p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
   background-color: #000000;
   color: #fff;
-  padding: 20px;
+  /* padding: 20px; */
   text-align: center;
 }
 
@@ -106,4 +123,43 @@ footer {
 .social-media li a {
   color: #fff;
   font-size: 24px;
+}
+
+@keyframes moveInLeft{
+  0% {
+    opacity: 0;
+    transform: translate(-100px);
+  }
+  80%{
+    transform: translate(10px);
+
+  }
+  100%{
+    opacity: 100;
+    transform: translate(0);
+  }
+}
+@keyframes moveInRight{
+  0% {
+    opacity: 0;
+    transform: translate(100px);
+  }
+  80%{
+    transform: translate(-10px);
+
+  }
+  100%{
+    opacity: 100;
+    transform: translate(0);
+  }
+}
+@keyframes moveInBottom{
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100%{
+    opacity: 100;
+    transform: translateY(0);
+  }
 }
