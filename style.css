@@ -11,10 +11,9 @@ body {
   justify-content: space-between;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 20px;
-  z-index: 999;
-  position: sticky;
-  left: 0;
-  top: 0;
+  position: fixed;
+  width: 100vw;
+  height: 17vh;
 }
 
 .logo {
@@ -80,6 +79,9 @@ body {
   }
 }
 
+.container {
+  padding-top: 17vh;
+}
 
 .about {
   display: flex;
